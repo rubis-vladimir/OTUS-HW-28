@@ -9,21 +9,19 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OTUS-HW-28"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of OTUS-HW-28."
   spec.authors      = { 'Rubis Vladimir' => 'rubis-vu@mail.ru' }
   spec.description  = <<-DESC
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/OTUS-HW-28"
-  spec.license      = "MIT (example)"
+  spec.homepage     = "https://github.com/rubis-vladimir/OTUS-HW-28"
+  spec.license      = { :type => "MIT" }
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "http://EXAMPLE/OTUS-HW-28.git", :tag => "#{spec.version}" }
-
 
   spec.source_files  = "OTUS-HW-28/**/*.{swift,h,m}"
   spec.public_header_files = "OTUS-HW-28/**/*.h"
 
- 
 
 end
