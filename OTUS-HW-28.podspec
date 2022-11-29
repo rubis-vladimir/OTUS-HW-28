@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OTUS-HW-28"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of OTUS-HW-28."
   spec.authors      = { 'Rubis Vladimir' => 'rubis-vu@mail.ru' }
   spec.description  = <<-DESC
@@ -24,6 +24,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "OTUS-HW-28/**/*.{swift,h,m}"
   spec.public_header_files = "OTUS-HW-28/**/*.h"
 
-
+ 
 
 end
