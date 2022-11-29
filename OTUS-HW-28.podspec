@@ -9,9 +9,9 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OTUS-HW-28"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.1"
   spec.summary      = "A short description of OTUS-HW-28."
-
+  spec.authors      = { 'Rubis Vladimir' => 'rubis-vu@mail.ru' }
   spec.description  = <<-DESC
                    DESC
 
