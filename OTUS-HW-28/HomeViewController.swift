@@ -8,11 +8,17 @@
 import UIKit
 import SnapKit
 
-final class HomeViewController: UIViewController {
+public class HomeViewController: UIViewController {
     
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 48, weight: .thin)
+        label.numberOfLines = 0
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(label)
         
     }
 }
