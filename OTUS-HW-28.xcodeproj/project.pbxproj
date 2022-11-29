@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7D340C3229367AA100737A00 /* OTUS_HW_28.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D340C3129367AA100737A00 /* OTUS_HW_28.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D340C3929367AB700737A00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D340C3829367AB700737A00 /* HomeViewController.swift */; };
+		7D340C3C29367AED00737A00 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7D340C3B29367AED00737A00 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D340C2E29367AA100737A00 /* OTUS_HW_28.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTUS_HW_28.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D340C3129367AA100737A00 /* OTUS_HW_28.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTUS_HW_28.h; sourceTree = "<group>"; };
+		7D340C3829367AB700737A00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D340C3C29367AED00737A00 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				7D340C3129367AA100737A00 /* OTUS_HW_28.h */,
+				7D340C3829367AB700737A00 /* HomeViewController.swift */,
 			);
 			path = "OTUS-HW-28";
 			sourceTree = "<group>";
@@ -78,6 +83,9 @@
 			dependencies = (
 			);
 			name = "OTUS-HW-28";
+			packageProductDependencies = (
+				7D340C3B29367AED00737A00 /* SnapKit */,
+			);
 			productName = "OTUS-HW-28";
 			productReference = 7D340C2E29367AA100737A00 /* OTUS_HW_28.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +101,7 @@
 				TargetAttributes = {
 					7D340C2D29367AA100737A00 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -105,6 +114,9 @@
 				Base,
 			);
 			mainGroup = 7D340C2429367AA100737A00;
+			packageReferences = (
+				7D340C3A29367AED00737A00 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7D340C2F29367AA100737A00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D340C3929367AB700737A00 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 		7D340C3629367AA100737A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +292,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +301,7 @@
 		7D340C3729367AA100737A00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -333,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D340C3A29367AED00737A00 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D340C3B29367AED00737A00 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D340C3A29367AED00737A00 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D340C2529367AA100737A00 /* Project object */;
 }
